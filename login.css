@@ -1,0 +1,117 @@
+/* ========== GLOBAL STYLE ========== */
+body {
+  margin: 0;
+  padding: 0;
+  background: #F2F6F9;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  background: #ffffff;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  color: #2A6592;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #2D3748;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding-right: 38px;   /* pas, tidak tambah panjang */
+  box-sizing: border-box;
+}
+
+.input-with-icon i {
+  position: absolute;
+  right: 10px;            /* rapat, tidak dorong input */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+}
+
+
+/* kecilin lebar input email biar sama dengan password */
+input[type="email"] {
+  padding-right: 38px;   /* samain dengan password */
+  box-sizing: border-box;
+}
+
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2A6592;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #3B82F6;
+}
+
+/* FOOTER TEXT */
+.form-footer {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-footer a {
+  color: #3B82F6;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+}
